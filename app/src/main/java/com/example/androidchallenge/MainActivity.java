@@ -1,5 +1,6 @@
 package com.example.androidchallenge;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -24,8 +25,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToAbout(View view) {
-
+        Intent intent = new Intent(this, About.class);
+        startActivity(intent);
     }
+
+    public void goToProfile(View view) {
+        Intent intent = new Intent(this, Profile.class);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

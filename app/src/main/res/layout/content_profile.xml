@@ -8,22 +8,19 @@
     tools:context=".Profile"
     tools:showIn="@layout/activity_profile">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
-
-    <EditText
+    <TextView
         android:id="@+id/editText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Ntsako Selaule"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="277dp" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <View
+    <EditText
         android:id="@+id/divider"
         android:layout_width="395dp"
         android:layout_height="1dp"
@@ -31,7 +28,7 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="337dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -47,7 +44,7 @@
         app:layout_constraintStart_toStartOf="@+id/divider"
         tools:layout_editor_absoluteY="361dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -58,10 +55,9 @@
         app:layout_constraintEnd_toEndOf="@+id/editText2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -74,7 +70,7 @@
         app:layout_constraintStart_toStartOf="@+id/editText4"
         app:layout_constraintTop_toBottomOf="@+id/editText4" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -87,7 +83,7 @@
         app:layout_constraintStart_toStartOf="@+id/editText5"
         app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText7"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -98,4 +94,18 @@
         app:layout_constraintEnd_toEndOf="@+id/editText6"
         app:layout_constraintStart_toStartOf="@+id/editText6"
         app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="206dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>
