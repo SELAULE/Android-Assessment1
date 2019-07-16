@@ -1,5 +1,6 @@
 package com.example.androidchallenge;
 
+import android.net.http.SslError;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -9,8 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.webkit.SslErrorHandler;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class About extends AppCompatActivity {
 
@@ -22,9 +25,17 @@ public class About extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         WebView mWebView = (WebView) findViewById(R.id.webView_content);
+//        WebView mWebView = new WebView(this);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        mWebView.loadUrl("http://www.wethinkcode.co.za/");
+        mWebView.loadUrl("https://www.andela.com/alc");
+        mWebView.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onReceivedSslError(WebView v, SslErrorHandler handler, SslError er) {
+                handler.proceed();
+            }
+        });
+
         //http://beta.html5test.com/
     }
 

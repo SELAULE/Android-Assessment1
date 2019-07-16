@@ -23,9 +23,9 @@ public class Profile extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-        Intent intent = getIntent();
-        ImageView mImageView = (ImageView) findViewById(R.id.imageView);
-        mImageView.setImageResource(R.drawable.me);
+//        Intent intent = getIntent();
+//        ImageView mImageView = (ImageView) findViewById(R.id.imageView);
+//        mImageView.setImageResource(R.drawable.me);
     }
 }
 
