@@ -1,5 +1,6 @@
 package com.example.androidchallenge;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -21,11 +22,8 @@ public class Profile extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
-//        Intent intent = getIntent();
-//        ImageView mImageView = (ImageView) findViewById(R.id.imageView);
-//        mImageView.setImageResource(R.drawable.me);
     }
 }
 

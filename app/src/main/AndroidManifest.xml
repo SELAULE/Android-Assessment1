@@ -11,10 +11,13 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".Profile"
+            android:parentActivityName=".MainActivity"
             android:label="@string/title_activity_profile"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity
             android:name=".About"
+            android:parentActivityName=".MainActivity"
             android:label="@string/title_activity_about"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -28,5 +31,5 @@
             </intent-filter>
         </activity>
     </application>
-
+0
 </manifest>
