@@ -25,10 +25,10 @@ public class About extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         WebView mWebView = (WebView) findViewById(R.id.webView_content);
-//        WebView mWebView = new WebView(this);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         mWebView.loadUrl("https://www.andela.com/alc");
+
         mWebView.setWebViewClient(new WebViewClient() {
             @Override
             public void onReceivedSslError(WebView v, SslErrorHandler handler, SslError er) {
